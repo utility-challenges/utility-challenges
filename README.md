@@ -5,6 +5,14 @@
   Let's implement a variety of utilities!
 </p>
 
+## TODO
+
+- [ ] docs サイトを作る
+  - vuepress
+- [ ] docs サイトに spec ファイルと答案ファイルの中身を載せる
+- [ ] docs サイトの該当ページに答案を作る issue へのリンクを貼る
+- [ ] 貢献ガイドを作る
+
 ## Index
 
 ### typescript
