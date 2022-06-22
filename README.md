@@ -5,3 +5,9 @@
   Let's implement a variety of utilities!
 </p>
 
+## Index
+
+### typescript
+
+- [compose](./typescript/compose)
+- [pipe](./typescript/pipe)
