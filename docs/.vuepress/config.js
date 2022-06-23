@@ -3,7 +3,7 @@ const { defineConfig } = require("vuepress/config");
 const fs = require("fs");
 
 const getQuestionsChildren = (category) => {
-  const fileNames = fs.readdirSync(category);
+  const fileNames = fs.readdirSync(`questions/${category}`);
 
   const result = {
     title: category,
@@ -17,6 +17,8 @@ const getQuestionsChildren = (category) => {
 
   return result;
 };
+
+console.log(getQuestionsChildren("typescript"));
 
 module.exports = defineConfig({
   /**
