@@ -54,6 +54,7 @@ module.exports = defineConfig({
         {
           title: "Questions",
           collapsable: false,
+          path: "/questions",
           children: [
             {
               title: "typescript",
