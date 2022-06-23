@@ -1,12 +1,11 @@
-const { description } = require('../../package')
-const { defineConfig } = require('vuepress/config')
-
+const { description } = require("../../package");
+const { defineConfig } = require("vuepress/config");
 
 module.exports = defineConfig({
   /**
    * Ref：https://v1.vuepress.vuejs.org/config/#title
    */
-  title: 'Utility Challenges',
+  title: "Utility Challenges",
   /**
    * Ref：https://v1.vuepress.vuejs.org/config/#description
    */
@@ -18,9 +17,19 @@ module.exports = defineConfig({
    * ref：https://v1.vuepress.vuejs.org/config/#head
    */
   head: [
-    ['meta', { name: 'theme-color', content: '#3eaf7c' }],
-    ['meta', { name: 'apple-mobile-web-app-capable', content: 'yes' }],
-    ['meta', { name: 'apple-mobile-web-app-status-bar-style', content: 'black' }]
+    ["meta", { name: "theme-color", content: "#3eaf7c" }],
+    ["meta", { name: "apple-mobile-web-app-capable", content: "yes" }],
+    [
+      "meta",
+      { name: "apple-mobile-web-app-status-bar-style", content: "black" },
+    ],
+    [
+      "link",
+      {
+        rel: "icon",
+        href: "https://raw.githubusercontent.com/tyankatsu0105/utility-challenges/main/logo.png",
+      },
+    ],
   ],
 
   /**
@@ -29,44 +38,47 @@ module.exports = defineConfig({
    * ref：https://v1.vuepress.vuejs.org/theme/default-theme-config.html
    */
   themeConfig: {
-    repo: 'https://github.com/tyankatsu0105/utility-challenges',
+    repo: "https://github.com/tyankatsu0105/utility-challenges",
     editLinks: true,
-    docsDir: '',
-    editLinkText: '',
+    docsDir: "docs",
+    docsBranch: "main",
     lastUpdated: true,
     nav: [
       {
-        text: 'Guide',
-        link: '/guide/',
+        text: "Questions",
+        link: "/questions/",
       },
-      {
-        text: 'Config',
-        link: '/config/'
-      },
-      {
-        text: 'GitHub',
-        link: 'https://v1.vuepress.vuejs.org'
-      }
     ],
     sidebar: {
-      '/guide/': [
+      "/questions/": [
         {
-          title: 'Guide',
+          title: "Questions",
           collapsable: false,
           children: [
-            '',
-            'using-vue',
-          ]
-        }
+            {
+              title: "typescript",
+              collapsable: false,
+              children: [
+                {
+                  title: "compose",
+                  collapsable: false,
+                  path: "/questions/typescript/compose",
+                },
+                {
+                  title: "pipe",
+                  collapsable: false,
+                  path: "/questions/typescript/pipe",
+                },
+              ],
+            },
+          ],
+        },
       ],
-    }
+    },
   },
 
   /**
    * Apply plugins，ref：https://v1.vuepress.vuejs.org/zh/plugin/
    */
-  plugins: [
-    '@vuepress/plugin-back-to-top',
-    '@vuepress/plugin-medium-zoom',
-  ]
-}) 
+  plugins: ["@vuepress/plugin-back-to-top", "@vuepress/plugin-medium-zoom"],
+});
