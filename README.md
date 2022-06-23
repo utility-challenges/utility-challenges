@@ -4,18 +4,3 @@
 <p align="center">
   Let's implement a variety of utilities!
 </p>
-
-## TODO
-
-- [x] docs サイトを作る
-  - vuepress
-- [x] docs サイトに spec ファイルと答案ファイルの中身を載せる
-- [x] docs サイトの該当ページに答案を作る issue へのリンクを貼る
-- [ ] 貢献ガイドを作る
-
-## Index
-
-### typescript
-
-- [compose](./typescript/compose)
-- [pipe](./typescript/pipe)
