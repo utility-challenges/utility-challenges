@@ -4,6 +4,6 @@ describe("noop", () => {
   it("pass", () => {
     const result = noop();
 
-    expect(result).toBe(undefined);
+    expect(result).toBeUndefined();
   });
 });
