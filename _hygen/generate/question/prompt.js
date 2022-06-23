@@ -1,9 +1,13 @@
+const fs = require("fs");
+
+const choices = fs.readdirSync("questions");
+
 module.exports = [
   {
-    type: "list",
+    type: "select",
     name: "category",
     message: "Which category",
-    choices: ["typescript"],
+    choices,
   },
   {
     type: "input",
