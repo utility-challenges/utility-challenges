@@ -22,5 +22,5 @@ npm run gen:question
 
 https://github.com/tyankatsu0105/utility-challenges/labels
 
-- Label name: category-name
+- Label name: category/name
 - Color: #0C73D2
