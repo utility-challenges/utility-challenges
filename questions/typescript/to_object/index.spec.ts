@@ -12,6 +12,7 @@ describe("to_object", () => {
         name: "Mike",
       },
     ];
+
     const result = to_object(ary, "id");
 
     expect(result).toStrictEqual({
@@ -37,6 +38,7 @@ describe("to_object", () => {
         name: "Mike",
       },
     ];
+
     const result = to_object(ary, "id");
 
     expect(result).toStrictEqual({
