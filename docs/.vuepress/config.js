@@ -18,8 +18,6 @@ const getQuestionsChildren = (category) => {
   return result;
 };
 
-console.log(getQuestionsChildren("typescript"));
-
 module.exports = defineConfig({
   /**
    * Ref：https://v1.vuepress.vuejs.org/config/#title
@@ -74,7 +72,10 @@ module.exports = defineConfig({
           title: "Questions",
           collapsable: false,
           path: "/questions",
-          children: [getQuestionsChildren("typescript")],
+          children: [
+            getQuestionsChildren("typescript"),
+            getQuestionsChildren("react"),
+          ],
         },
       ],
     },
