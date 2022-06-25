@@ -1,11 +1,11 @@
 ---
-to: questions/<%= category %>/<%= h.changeCase.snakeCase(name) %>/index.spec.ts
+to: questions/<%= category %>/<%= h.changeCase.pascalCase(name) %>/index.spec.ts
 ---
-import { <%= h.changeCase.snakeCase(name) %> } from "./index";
+import { <%= h.changeCase.pascalCase(name) %> } from "./index";
 
-describe("<%= h.changeCase.snakeCase(name) %>", () => {
+describe("<%= h.changeCase.pascalCase(name) %>", () => {
   it("pass", () => {
-    const result = <%= h.changeCase.snakeCase(name) %>();
+    const result = <%= h.changeCase.pascalCase(name) %>();
 
     expect(result).toBe();
   });

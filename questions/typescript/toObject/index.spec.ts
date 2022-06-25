@@ -1,6 +1,6 @@
-import { to_object } from "./index";
+import { toObject } from "./index";
 
-describe("to_object", () => {
+describe("toObject", () => {
   it("pass", () => {
     const ary = [
       {
@@ -13,7 +13,7 @@ describe("to_object", () => {
       },
     ];
 
-    const result = to_object(ary, "id");
+    const result = toObject(ary, "id");
 
     expect(result).toStrictEqual({
       "DB44880B-23DB-4A5F-BF4C-FE5CC777542B": {
@@ -39,7 +39,7 @@ describe("to_object", () => {
       },
     ];
 
-    const result = to_object(ary, "id");
+    const result = toObject(ary, "id");
 
     expect(result).toStrictEqual({
       "DB44880B-23DB-4A5F-BF4C-FE5CC777542B": {

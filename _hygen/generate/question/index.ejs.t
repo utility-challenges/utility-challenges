@@ -1,4 +1,4 @@
 ---
-to: questions/<%= category %>/<%= h.changeCase.snakeCase(name) %>/index.ts
+to: questions/<%= category %>/<%= h.changeCase.pascalCase(name) %>/index.ts
 ---
-export const <%= h.changeCase.snakeCase(name) %> = () => {}
+export const <%= h.changeCase.pascalCase(name) %> = () => {}

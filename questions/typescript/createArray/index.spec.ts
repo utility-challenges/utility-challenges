@@ -1,14 +1,14 @@
-import { create_array } from "./index";
+import { createArray } from "./index";
 
-describe("create_array", () => {
+describe("createArray", () => {
   it("pass", () => {
-    const result = create_array(100);
+    const result = createArray(100);
 
     expect(result.length).toBe(100);
   });
 
   it("pass", () => {
-    const result = create_array(100);
+    const result = createArray(100);
 
     result.forEach((v) => {
       expect(v).toBeUndefined();
@@ -16,7 +16,7 @@ describe("create_array", () => {
   });
 
   it("pass", () => {
-    const result = create_array(100, "hello");
+    const result = createArray(100, "hello");
 
     result.forEach((v) => {
       expect(v).toBe("hello");
