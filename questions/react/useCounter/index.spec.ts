@@ -1,16 +1,16 @@
 import { renderHook, act } from "@testing-library/react";
 
-import { useCount } from "./index";
+import { useCounter } from "./index";
 
-describe("useCount", () => {
+describe("useCounter", () => {
   it("pass", () => {
-    const { result } = renderHook(() => useCount());
+    const { result } = renderHook(() => useCounter());
 
     expect(result.current.count).toEqual(0);
   });
 
   it("pass", () => {
-    const { result } = renderHook(() => useCount());
+    const { result } = renderHook(() => useCounter());
 
     act(() => {
       result.current.countUp();
@@ -20,7 +20,7 @@ describe("useCount", () => {
   });
 
   it("pass", () => {
-    const { result } = renderHook(() => useCount());
+    const { result } = renderHook(() => useCounter());
 
     act(() => {
       result.current.countDown();
