@@ -64,6 +64,7 @@ module.exports = defineConfig({
     docsDir: "docs",
     docsBranch: "main",
     lastUpdated: true,
+    search: false,
     nav: [
       {
         text: "Questions",
