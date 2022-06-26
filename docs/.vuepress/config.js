@@ -2,20 +2,24 @@ const { description } = require("../../package");
 const { defineConfig } = require("vuepress/config");
 const fs = require("fs");
 
-const getQuestionsChildren = (category) => {
-  const fileNames = fs.readdirSync(`questions/${category}`);
+const getQuestionsChildren = () => {
+  const categories = fs.readdirSync("questions");
 
-  const result = {
-    title: category,
-    collapsable: false,
-    children: fileNames.map((fileName) => ({
-      title: fileName,
+  return categories.map((category) => {
+    const fileNames = fs.readdirSync(`questions/${category}`);
+
+    const result = {
+      title: category,
       collapsable: false,
-      path: `/questions/${category}/${fileName}`,
-    })),
-  };
+      children: fileNames.map((fileName) => ({
+        title: fileName,
+        collapsable: false,
+        path: `/questions/${category}/${fileName}`,
+      })),
+    };
 
-  return result;
+    return result;
+  });
 };
 
 module.exports = defineConfig({
@@ -72,10 +76,7 @@ module.exports = defineConfig({
           title: "Questions",
           collapsable: false,
           path: "/questions",
-          children: [
-            getQuestionsChildren("typescript"),
-            getQuestionsChildren("react"),
-          ],
+          children: getQuestionsChildren(),
         },
       ],
     },
