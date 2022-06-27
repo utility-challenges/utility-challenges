@@ -13,7 +13,7 @@ jobs:
         id: regex-match
         with:
           text: ${{ github.event.issue.title }}
-          regex: '^\[(.*) - (.*)]*$'
+          regex: '^\[(.*) - (.*)]'
 
       - uses: actions-ecosystem/action-add-labels@v1
         if: ${{ steps.regex-match.outputs.match != '' }}
