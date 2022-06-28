@@ -1,5 +1,5 @@
 ---
-to: questions/<%= category %>/<%= h.changeCase.camelCase(name) %>/index.spec.ts
+to: questions/<%= category %>/<%= h.changeCase.camelCase(name) %>/index.test.ts
 ---
 import { <%= h.changeCase.camelCase(name) %> } from "./index";
 
