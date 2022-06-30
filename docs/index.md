@@ -4,5 +4,5 @@ heroImage: https://raw.githubusercontent.com/utility-challenges/utility-challeng
 tagline: Let's implement a variety of utilities!
 actionText: Let's Start →
 actionLink: /questions/
-footer: Made by tyankatsu
+footer: Made by Utility Challenges team
 ---
