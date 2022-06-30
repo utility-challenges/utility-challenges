@@ -8,7 +8,7 @@ By the way, you cana also these:
 # Usage
 
 ```bash
-git clone git@github.com:tyankatsu0105/utility-challenges.git
+git clone git@github.com:utility-challenges/utility-challenges.git
 ```
 
 ```bash

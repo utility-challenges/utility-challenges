@@ -48,7 +48,7 @@ module.exports = defineConfig({
       "link",
       {
         rel: "icon",
-        href: "https://raw.githubusercontent.com/tyankatsu0105/utility-challenges/main/logo.png",
+        href: "https://raw.githubusercontent.com/utility-challenges/utility-challenges/main/logo.png",
       },
     ],
   ],
@@ -59,7 +59,7 @@ module.exports = defineConfig({
    * ref：https://v1.vuepress.vuejs.org/theme/default-theme-config.html
    */
   themeConfig: {
-    repo: "https://github.com/tyankatsu0105/utility-challenges",
+    repo: "https://github.com/utility-challenges/utility-challenges",
     editLinks: true,
     docsDir: "docs",
     docsBranch: "main",

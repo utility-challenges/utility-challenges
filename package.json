@@ -11,15 +11,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/tyankatsu0105/utility-challenges.git"
+    "url": "git+https://github.com/utility-challenges/utility-challenges.git"
   },
   "keywords": [],
   "author": "tyankatsu <frips.ryilsufupe+dev@gmail.com> (https://tyankatsu.com)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/tyankatsu0105/utility-challenges/issues"
+    "url": "https://github.com/utility-challenges/utility-challenges/issues"
   },
-  "homepage": "https://github.com/tyankatsu0105/utility-challenges#readme",
+  "homepage": "https://github.com/utility-challenges/utility-challenges#readme",
   "devDependencies": {
     "@swc/core": "1.2.204",
     "@swc/jest": "0.2.21",
