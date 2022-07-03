@@ -4,3 +4,11 @@
 <p align="center">
   Let's implement a variety of utilities!
 </p>
+
+## Inspired By
+
+- [type-challenges](https://github.com/type-challenges/type-challenges)
+
+## LICENSE
+
+see [LICENSE](./LICENSE)
