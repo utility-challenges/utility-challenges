@@ -16,5 +16,9 @@ npm install
 ```
 
 ```bash
-npm run start
+npm run test
+# or
+npm run test questions/typescript/pipe/index.test.ts
+# or
+npm run test:watch
 ```
