@@ -7,9 +7,7 @@ By the way, you cana also these:
 
 # Usage
 
-```bash
-git clone git@github.com:utility-challenges/utility-challenges.git
-```
+Fork repository from https://github.com/utility-challenges/utility-challenges.
 
 ```bash
 npm install
