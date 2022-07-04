@@ -3,9 +3,9 @@
   "version": "0.0.0",
   "description": "Let's implement a variety of utilities!",
   "scripts": {
-    "start": "vuepress dev docs",
     "test": "jest",
     "test:watch": "jest --watch",
+    "docs:dev": "vuepress dev docs",
     "docs:build": "vuepress build docs",
     "gen:question": "hygen generate question"
   },
