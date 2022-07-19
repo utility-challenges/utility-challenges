@@ -1,6 +1,9 @@
 import { promisify } from "./index";
 
-const fn = (value: number, cb: (error: Error, results?: number) => any) => {
+const fn = (
+  value: number,
+  cb: (error: Error | null, results?: number) => any
+) => {
   if (value < 0) return cb(new Error("there is an error"));
 
   return cb(null, value);
